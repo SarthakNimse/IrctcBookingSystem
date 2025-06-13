@@ -52,6 +52,11 @@ public class NotificationAlertService {
         System.out.println("Notification Details: " + notificationalert);
     }
 
+    public void sendBookingNotification(String userName, String trainName) {
+        System.out.println("🔔 Notification: Dear " + userName + ", your ticket for train " + trainName + " has been successfully booked!");
+    }
+
+
     private boolean isValidNotificationType(String type) {
         return type.equalsIgnoreCase("EMAIL") || type.equalsIgnoreCase("SMS");
     }

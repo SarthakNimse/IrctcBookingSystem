@@ -28,6 +28,7 @@ public class IrctcBookingDemo {
             System.out.println("5. Notification Alerts");
             System.out.println("6. Booking History");
             System.out.println("7. Admin Management");
+            System.out.println("8. Start Booking Flow");
             System.out.println("0: Exit");
             System.out.print("Enter your choice: ");
 
@@ -55,6 +56,9 @@ public class IrctcBookingDemo {
                         break;
                     case 7:
                         adminController.handleAdminOperations();
+                        break;
+                    case 8:
+                        new BookingFlow().startBookingFlow();
                         break;
                     case 0:
                         System.out.println("THANK YOU FOR USING THE IRCTC BOOKING SYSTEM! Safe Travels!");

@@ -52,6 +52,10 @@ public class BookingHistoryService {
         bookinghistoryservices.remove(bookingId);
         System.out.println("Booking ID " + bookingId + " has been canceled successfully!");
     }
+    public void saveBooking(BookingHistory history) {
+        bookinghistoryservices.put(history.getBookingId(), history);
+    }
+
 
     private boolean checkCancellationPolicy(int bookingId) {
         return bookingId % 2 == 0;

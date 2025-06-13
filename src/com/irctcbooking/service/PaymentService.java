@@ -18,7 +18,7 @@ public class PaymentService {
         Payment payment = new Payment();
 
         System.out.println("Enter your payment Id: ");
-        int paymentId = Integer.parseInt(sc.nextLine());
+        String paymentId = sc.nextLine();
 
         System.out.println("Enter your payment Date: ");
         String paymentDate = sc.nextLine();
@@ -46,7 +46,7 @@ public class PaymentService {
         payment.setPaymentMethod(paymentMethod);
         payment.setAmount(amount);
         payment.setPaymentStatus(paymentStatus);
-        payments.put(paymentId, payment);
+        payments.put(Integer.valueOf(paymentId), payment);
 
         System.out.println("Payment information saved successfully!");
     }

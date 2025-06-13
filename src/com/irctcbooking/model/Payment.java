@@ -2,7 +2,7 @@ package com.irctcbooking.model;
 
 public class Payment {
 
-    private int paymentId;
+    private String paymentId;
     private int ticketId;
     private int userId;
     private String paymentDate;
@@ -23,11 +23,11 @@ public class Payment {
                 '}';
     }
 
-    public int getPaymentId() {
+    public String getPaymentId() {
         return paymentId;
     }
 
-    public void setPaymentId(int paymentId) {
+    public void setPaymentId(String paymentId) {
         this.paymentId = paymentId;
     }
 

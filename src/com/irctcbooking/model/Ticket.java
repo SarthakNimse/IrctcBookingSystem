@@ -11,6 +11,7 @@ public class Ticket {
     private String departureTime;
     private String bookingDate;
     private double ticketPrice;
+    private int trainId;
 
     @Override
     public String toString() {
@@ -88,6 +89,14 @@ public class Ticket {
 
     public void setTicketPrice(double ticketPrice) {
         this.ticketPrice = ticketPrice;
+    }
+
+    public void setTrainId(int trainId) {
+        this.trainId = trainId;
+    }
+
+    public int getTrainId() {
+        return trainId;
     }
 }
 
